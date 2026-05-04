@@ -1,0 +1,48 @@
+.otp-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+.otp-icon { font-size: 2.5rem; }
+.otp-title { font-family: var(--font-head); font-size: 1.4rem; font-weight: 700; }
+.otp-subtitle { color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; }
+.otp-subtitle strong { color: var(--accent3); }
+
+.otp-inputs {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+.otp-input {
+  width: 48px !important;
+  height: 56px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--font-head);
+  border-radius: 10px;
+  transition: all 0.2s;
+  padding: 0;
+}
+.otp-input.filled { border-color: var(--accent); color: var(--accent3); }
+.otp-input:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(108,99,255,0.2); }
+.otp-input.error { border-color: var(--accent2); animation: shake 0.3s; }
+@keyframes shake {
+  0%,100%{transform:translateX(0)} 25%{transform:translateX(-4px)} 75%{transform:translateX(4px)}
+}
+
+.otp-error { margin: 0; }
+
+.otp-resend { font-size: 0.85rem; color: var(--text-secondary); }
+.resend-btn {
+  background: none; border: none; color: var(--accent);
+  cursor: pointer; font-size: 0.9rem; font-family: var(--font-body);
+  text-decoration: underline;
+}
+.resend-btn:hover { color: var(--accent3); }
+.resend-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.back-btn { align-self: stretch; }

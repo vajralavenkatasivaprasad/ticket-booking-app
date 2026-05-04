@@ -1,0 +1,43 @@
+.booking-form { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.form-header { display: flex; flex-direction: column; gap: 0.3rem; }
+.form-title { font-family: var(--font-head); font-size: 1.4rem; font-weight: 700; }
+.form-subtitle { color: var(--text-secondary); font-size: 0.88rem; }
+
+.server-error {
+  background: rgba(255, 101, 132, 0.1);
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+form { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.required { color: var(--accent2); }
+
+.field-hint { font-size: 0.75rem; color: var(--text-secondary); opacity: 0.7; }
+
+.total-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(67, 230, 181, 0.08);
+  border: 1px solid rgba(67, 230, 181, 0.25);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+.total-amount { font-size: 1.4rem; font-weight: 700; color: var(--accent3); font-family: var(--font-head); }
+
+.form-actions { display: flex; flex-direction: column; gap: 0.75rem; }

@@ -1,0 +1,66 @@
+.event-details { display: flex; flex-direction: column; gap: 1.4rem; }
+
+.event-badge { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+.badge-dept {
+  background: rgba(108, 99, 255, 0.15);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.badge-urgent {
+  background: rgba(255, 101, 132, 0.15);
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.6} }
+
+.event-name {
+  font-family: var(--font-head);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(135deg, var(--text-primary), var(--accent3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.event-desc { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; }
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+.info-icon { font-size: 1.3rem; margin-top: 2px; }
+.info-label { display: block; font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 2px; }
+.info-value { display: block; font-size: 0.95rem; font-weight: 600; color: var(--text-primary); }
+.info-value.price { color: var(--accent3); font-size: 1.1rem; }
+
+.availability-section { display: flex; flex-direction: column; gap: 0.5rem; }
+.avail-header { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); }
+.avail-count { font-weight: 600; color: var(--accent3); }
+.avail-count.urgent { color: var(--accent2); }
+.progress-bar { height: 8px; background: var(--bg-dark); border-radius: 4px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent3)); border-radius: 4px; transition: width 0.5s ease; }
+.progress-fill.urgent { background: linear-gradient(90deg, var(--accent2), #ff8c69); }

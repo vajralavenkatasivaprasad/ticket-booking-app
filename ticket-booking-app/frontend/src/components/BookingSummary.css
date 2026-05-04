@@ -1,0 +1,55 @@
+.summary-card { display: flex; flex-direction: column; gap: 1.4rem; }
+
+.success-header { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; text-align: center; }
+.success-icon { font-size: 3rem; animation: pop 0.4s ease-out; }
+@keyframes pop { 0%{transform:scale(0)} 80%{transform:scale(1.2)} 100%{transform:scale(1)} }
+.success-title { font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; color: var(--accent3); }
+.success-msg { color: var(--text-secondary); font-size: 0.9rem; }
+
+.booking-id {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  background: var(--bg-dark);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+.booking-id strong { color: var(--accent); }
+
+.summary-section { display: flex; flex-direction: column; gap: 0.6rem; }
+.summary-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+.summary-grid {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border);
+}
+.summary-row:last-child { border-bottom: none; }
+.summary-row span:first-child { color: var(--text-secondary); }
+.summary-row span:last-child { font-weight: 600; text-align: right; max-width: 60%; }
+.summary-row .highlight { color: var(--accent); }
+.total-row { background: rgba(67, 230, 181, 0.06); }
+.total-val { color: var(--accent3); font-size: 1.1rem; font-family: var(--font-head); }
+
+.email-note {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+.email-note strong { color: var(--accent3); }
+
+.summary-actions { display: flex; flex-direction: column; gap: 0.75rem; }
